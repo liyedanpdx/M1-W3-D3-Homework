@@ -100,6 +100,30 @@
     percentageNumber(Dividend, Divisor);
   });
 
+  // Integer
+  function roundNumber(num) {
+    var integerNum = Math.round(num);
+    document.getElementById("solution").innerHTML = 'The nearest whole number of ' + num + ' is ' + integerNum;
+  }
+  
+  var intButton = document.getElementById("int-button");
+  intButton.addEventListener("click", function() {
+    var num = document.getElementById("int-input").value;
+    roundNumber(num);
+  });
+
+  // the Area of the circle
+  function circleArea(num) {
+    var areaCircle = Math.PI * Math.pow(num, 2);
+    document.getElementById("solution").innerHTML = 'The area of circle with radius ' + num + ' is ' + areaCircle;
+  }
+  
+  var areaButton = document.getElementById("area-button");
+  areaButton.addEventListener("click", function() {
+    var num = document.getElementById("area-input").value;
+    circleArea(num);
+  });
+
 </script>
 </body>
 </html>
